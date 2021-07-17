@@ -1,0 +1,10 @@
+com.pikk.pikkc
+
+pikk prod
+40:D1:9A:9F:00:FA:50:75:63:B3:35:98:D9:43:07:D0:92:D6:47:0E
+
+pikk dev
+44:56:F5:E2:76:18:29:11:02:78:C8:F1:CF:91:27:70:56:94:A7:FA
+
+pikk google
+A0:0B:FB:EE:45:BE:9F:DF:BF:A1:10:7E:8E:FF:06:80:1A:CC:85:CD

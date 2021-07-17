@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.login_act"
+    android:background="?attr/colorPrimary"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:fontFamily="@font/quicksandbold"-->
+<!--            android:text="pikkC"-->
+<!--            android:textSize="62dp"-->
+<!--            android:layout_marginTop="-52dp"-->
+<!--            android:textColor="#fff"-->
+<!--            android:gravity="center"-->
+<!--            >-->
+<!--        </TextView>-->
+        <ImageView
+            android:fitsSystemWindows="true"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:src="@drawable/pikkc__2_"
+            android:padding="0dp"
+            android:scaleType="centerCrop"
+            android:layout_margin="0dp"
+            >
+        </ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Make your data sets with ease"
+            android:textColor="#67DD5A"
+            android:fontFamily="@font/quicksandmedium"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_marginTop="22dp"
+            >
+        </TextView>
+
+        <Button
+            android:id="@+id/sign_in_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:foreground="@drawable/app_cam_misc_butt_style"
+            android:text="Sign in with Google"
+            android:textAllCaps="false"
+            android:drawableLeft="@drawable/ic_logo_google__2_"
+            android:drawablePadding="3dp"
+            android:fontFamily="@font/quicksandbold"
+            android:paddingLeft="22dp"
+            android:layout_marginTop="32dp"
+            android:paddingRight="22dp"
+            >
+
+        </Button>
+
+<!--        <com.google.android.gms.common.SignInButton-->
+<!--            android:layout_width="250dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="32dp"-->
+<!--            android:backgroundTint="#e0e0e0"-->
+<!--            />-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="or"
+                android:gravity="center"
+                android:fontFamily="@font/quicksandbold"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:layout_margin="6dp"
+                >
+
+            </TextView>
+
+        <Button
+            android:id="@+id/app_log_gog_butt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksandregular"
+            android:foreground="@drawable/app_cam_misc_butt_style"
+            android:paddingLeft="22dp"
+            android:layout_marginTop="7dp"
+            android:paddingRight="22dp"
+            android:text="Sign in later"
+            android:textAllCaps="false">
+
+        </Button>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingBottom="32dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksandbold"
+                android:text="P"
+                android:textSize="38dp"
+                android:textColor="#fff"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksandbold"
+                android:text="i"
+                android:textSize="38dp"
+                android:textColor="#67DD5A"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksandbold"
+                android:text="kk"
+                android:textSize="38dp"
+                android:textColor="#fff"
+                />
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksandmedium"
+        android:text="Write to us:"
+        android:textSize="17dp"
+        android:textColor="#fff"
+        />
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksandmedium"
+                android:text="#pikkc"
+                android:textSize="16dp"
+                android:layout_marginRight="12dp"
+                android:textColor="#fff"
+                />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksandmedium"
+            android:text="#pikkco"
+            android:textSize="16dp"
+            android:textColor="#fff"
+            />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

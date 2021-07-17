@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".land.land_act"
+    >
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/app_cam_cap_draw_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        tools:openDrawer="start"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:elevation="1dp"
+            >
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_cam_cap_appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppBarOverlay"
+            >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/app_cam_cap_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:titleTextColor="@color/white"
+            android:theme="@style/AppBarOverlay"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            />
+        </com.google.android.material.appbar.AppBarLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="?attr/actionBarSize"
+            >
+            <androidx.camera.view.PreviewView
+                android:id="@+id/camera"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:importantForAccessibility="no"
+                android:background="#000"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="?attr/colorPrimary"
+                android:orientation="vertical"
+                >
+
+            </LinearLayout>
+        <LinearLayout
+            android:id="@+id/app_cam_cap_bottom_cont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="?attr/colorPrimary"
+            android:gravity="bottom"
+            android:paddingTop="32px"
+            android:paddingBottom="32dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal"
+                >
+                <Button
+                    android:id="@+id/app_cam_cap_dat_butt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:foreground="@drawable/app_cam_misc_butt_style"
+                    android:text="Select where to save"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:textAllCaps="false"
+                    android:textSize="12dp"
+                    android:textColor="#fff"
+                    android:drawableRight="@drawable/ic_chevron_down_outline__3_"
+                    >
+
+                </Button>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/app_cam_asp_butt"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:layout_marginLeft="22dp"
+                        android:text="1:1"
+                        android:fontFamily="@font/quicksandbold"
+                        android:textSize="20dp"
+                        android:textColor="#fff"
+                        android:gravity="center"
+                        android:clickable="true"
+                        android:focusable="true"
+                        />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        >
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        >
+                        <ImageButton
+                            android:id="@+id/app_cam_cap_cam_swt_butt"
+                            android:layout_width="52dp"
+                            android:layout_height="52dp"
+                            android:src="@drawable/ic_camera_reverse_outline"
+                            android:layout_marginRight="22dp"
+                            android:padding="0dp"
+                            android:background="?attr/colorPrimary"
+                            style="?android:attr/borderlessButtonStyle"
+                            >
+                        </ImageButton>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="bottom"
+                    android:gravity="center_horizontal"
+                    >
+
+                    <ImageButton
+                        android:id="@+id/app_cam_cap_fin_butt"
+                        android:layout_width="82dp"
+                        android:layout_height="82dp"
+                        android:background="@drawable/app_cam_cap_style"
+                        >
+                    </ImageButton>
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/app_cam_cap_base_noti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="12dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Click and Save"
+                    android:textColor="@color/white"
+                    android:padding="7dp"
+                    android:textSize="13dp"
+                    android:background="@drawable/app_cam_cap_shut_noti_style"
+                    >
+
+                </TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+        </LinearLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/app_cam_cap_nav_cont"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_gravity="start"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/colorPrimary"
+
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:orientation="vertical"
+                    >
+                    <ImageButton
+                        android:id="@+id/app_app_bar_head_thr_butt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_reorder_three_outline"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        style="?android:attr/borderlessButtonStyle"
+                        tools:ignore="MissingConstraints">
+
+                    </ImageButton>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksandbold"
+                    android:text="pikkC"
+                    android:textSize="62dp"
+                    android:layout_marginTop="32dp"
+                    android:textColor="#fff"
+                    android:gravity="center"
+                    >
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Make your data sets with ease"
+                    android:textColor="#67DD5A"
+                    android:fontFamily="@font/quicksandmedium"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:layout_marginTop="12dp"
+                    >
+                </TextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#E6E3FD"
+                    android:layout_marginTop="32dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Connected to:"
+                        android:fontFamily="@font/quicksandregular"
+                        android:textColor="@color/white"
+                        android:textSize="19dp"
+                        />
+                    <Button
+                        android:id="@+id/app_cam_cap_sign_in_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:foreground="@drawable/app_cam_misc_butt_style"
+                        android:text="Sign in with Google"
+                        android:textAllCaps="false"
+                        android:drawableLeft="@drawable/ic_logo_google__2_"
+                        android:drawablePadding="3dp"
+                        android:fontFamily="@font/quicksandbold"
+                        android:paddingLeft="22dp"
+                        android:layout_marginTop="32dp"
+                        android:paddingRight="22dp"
+                        >
+
+                    </Button>
+<!--                    <com.google.android.gms.common.SignInButton-->
+<!--                      -->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="32dp"-->
+
+<!--                        />-->
+                    <Button
+                        android:id="@+id/app_side_nav_loggd_name_butt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:foreground="@drawable/app_cam_misc_butt_style"
+                        android:text="Sam's Google Drive"
+                        android:textAllCaps="false"
+                        android:layout_marginTop="12dp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="12dp"
+                        >
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Image Compression"
+                            android:fontFamily="@font/quicksandbold"
+                            android:textColor="#fff"
+                            >
+                        </TextView>
+                        <Switch
+                            android:id="@+id/app_cam_cap_comp_swt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+
+                        </Switch>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="12dp"
+                        >
+                        <ImageButton
+                            android:id="@+id/app_lnkd_butt"
+                            android:layout_width="72dp"
+                            android:layout_height="72dp"
+                            android:src="@drawable/ic_frame__1_"
+                            android:layout_gravity="center"
+                            style="?android:attr/borderlessButtonStyle"
+                            />
+                        <ImageButton
+                            android:id="@+id/app_insta_butt"
+                            android:layout_width="72dp"
+                            android:layout_height="72dp"
+                            android:src="@drawable/ic_frame__2_"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp"
+                            android:layout_gravity="center"
+                            style="?android:attr/borderlessButtonStyle"
+                            />
+                        <ImageButton
+                            android:id="@+id/app_mail_butt"
+                            android:layout_width="72dp"
+                            android:layout_height="72dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_frame__3_"
+                            style="?android:attr/borderlessButtonStyle"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.navigation.NavigationView>
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
